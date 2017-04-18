@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+  <div class="container">
+    <nav>
+    <p>
+      <%= link_to("Home", root_path)%>
+      <%= link_to("About", about_path)%>
+      <%= link_to("FAQ", posts_path)%>
+      <%= link_to("Contact", contact_path)%>
+    </p>
+    </nav>
+  </div>
+
+  <div id = "header">
+    <div class="container">
+        <h1><em>C</em>ompliance <em>S</em>o <em>S</em>imple</h1>
+        <h3>It needn't be mysterious</h3>
+        <em>by Yong Chun Yuan</em>
+    </div>
+  </div>
+
+  <div class = "container">
+    <%= yield %>
+	</div>
+
+  </body>
+</html>
