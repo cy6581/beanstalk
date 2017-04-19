@@ -56,15 +56,6 @@ nav p {
   background-color: inherit;
 }
 
-.container {
-    max-width: 320px;
-
-  @media (min-width: 400px) {
-    max-width: 970px;
-  }
-
-}
-
 a {
   color: #000;
   margin-right: 20px;
