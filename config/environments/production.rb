@@ -52,6 +52,10 @@ Rails.application.configure do
   # Use a different cache store in production.
   # config.cache_store = :mem_cache_store
 
+  # Added per admin install instructions. 
+  # Though I may not use this now. 
+  config.action_mailer.default_url_options = { host: 'compliance-so-simple.herokuapp.com' }
+
   # Use a real queuing backend for Active Job (and separate queues per environment)
   # config.active_job.queue_adapter     = :resque
   # config.active_job.queue_name_prefix = "blog_#{Rails.env}"
